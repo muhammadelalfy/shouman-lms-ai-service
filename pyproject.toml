@@ -1,12 +1,20 @@
 [project]
-name = "shouman-lms-ai-service"
+name = "lms-ai-service"
 version = "0.1.0"
-description = "AI/RAG service boundary for Shouman LMS"
+description = "AI/RAG service for Dr. Hazem Shoman Academy LMS (FastAPI)"
 requires-python = ">=3.12"
-dependencies = ["fastapi>=0.115", "uvicorn[standard]>=0.30", "pydantic-settings>=2.4"]
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "pydantic-settings>=2.4",
+]
 
 [project.optional-dependencies]
-dev = ["pytest>=8.0", "httpx>=0.27", "ruff>=0.6"]
+dev = [
+    "pytest>=8.0",
+    "httpx>=0.27",
+    "ruff>=0.6",
+]
 
 [tool.ruff]
 line-length = 100
